@@ -131,7 +131,7 @@ provisioning_enhance() {
     local config_file="config.json"
 
     # Install packages from the APT package list in the config file
-    # provisioning_install_packages
+    provisioning_install_packages
 
     # Download models from the config.json file
     download_models_from_config "$config_file"
