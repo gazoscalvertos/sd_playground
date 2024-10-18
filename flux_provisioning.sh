@@ -57,7 +57,7 @@ ESRGAN_MODELS=(
 )
 
 CONTROLNET_MODELS=(
-"https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors UnionFlux.safetensors"
+"https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors"
 )
 
 WORKFLOWS=(
