@@ -168,10 +168,14 @@ function provisioning_get_models() {
         # Use the original filename if no custom filename is provided
         filename="${custom_filename:-$(basename "$url")}"
         printf "Downloading: %s to %s\n" "$url" "$dir/$filename"
-        provisioning_download "${url}" "$dir/$filename"
+
+        if ! provisioning_download "${url}" "$dir/$filename"; then
+            printf "\nFailed to download: %s to %s\n" "$url" "$dir/$filename"
+            return 1
+        fi
+
         printf "\n"
     done
-}
 
 function provisioning_print_header() {
     printf "\n##############################################\n#                                            #\n#          Provisioning container            #\n#                                            #\n#         This will take some time           #\n#                                            #\n# Your container will be ready on completion #\n#                                            #\n##############################################\n\n"
@@ -230,5 +234,11 @@ function provisioning_download() {
         wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
     fi
 }
+
+function log_message() {
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> /var/log/provisioning.log
+}
+
+log_message "Starting provisioning process..."
 
 provisioning_start
