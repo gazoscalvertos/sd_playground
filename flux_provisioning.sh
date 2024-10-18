@@ -54,12 +54,12 @@ download_models_from_config() {
     mkdir -p models clip lora vae unet
 
     # Download models from various sections
-    download_model_type "esrgan_models" "/WORKSPACE/storage/stable_diffusion/models/models" "$config_file" "$hf_token" "$civitai_token"
-    download_model_type "unet_models" "/WORKSPACE/storage/stable_diffusion/models/unet" "$config_file" "$hf_token" "$civitai_token"
-    download_model_type "vae_models" "/WORKSPACE/storage/stable_diffusion/models/vae" "$config_file" "$hf_token" "$civitai_token"
-    download_model_type "lora_models" "/WORKSPACE/storage/stable_diffusion/models/lora" "$config_file" "$hf_token" "$civitai_token"
-    download_model_type "clip_models" "/WORKSPACE/storage/stable_diffusion/models/clip" "$config_file" "$hf_token" "$civitai_token"
-    download_model_type "controlnet" "/WORKSPACE/storage/stable_diffusion/models/controlnet" "$config_file" "$hf_token" "$civitai_token"
+    download_model_type "esrgan_models" "/workspace/storage/stable_diffusion/models/models" "$config_file" "$hf_token" "$civitai_token"
+    download_model_type "unet_models" "/workspace/storage/stable_diffusion/models/unet" "$config_file" "$hf_token" "$civitai_token"
+    download_model_type "vae_models" "/workspace/storage/stable_diffusion/models/vae" "$config_file" "$hf_token" "$civitai_token"
+    download_model_type "lora_models" "/workspace/storage/stable_diffusion/models/lora" "$config_file" "$hf_token" "$civitai_token"
+    download_model_type "clip_models" "/workspace/storage/stable_diffusion/models/clip" "$config_file" "$hf_token" "$civitai_token"
+    download_model_type "controlnet" "/workspace/storage/stable_diffusion/models/controlnet" "$config_file" "$hf_token" "$civitai_token"
 }
 
 # Function to download a specific type of model
