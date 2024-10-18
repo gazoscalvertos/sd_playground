@@ -127,6 +127,7 @@ provisioning_download_model() {
 
 # Main function to enhance the script
 provisioning_enhance() {
+    wget  --quiet --show-progress -O https://raw.githubusercontent.com/gazoscalvertos/sd_playground/refs/heads/main/config.json
     local config_file="config.json"
 
     # Install packages from the APT package list in the config file
