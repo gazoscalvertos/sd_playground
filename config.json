@@ -3,7 +3,11 @@
   "apt_packages": [],
   "pip_packages": [],
   "nodes": [],
-  "checkpoint_models": [],
+  "checkpoint_models": [
+    {
+      "url": "https://civitai.com/api/download/models/605080?type=Model&format=SafeTensor&size=full&fp=fp32"
+    }
+  ],
   "unet_models": [
     {
       "url": "https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q8_0.gguf"
