@@ -10,9 +10,6 @@
   ],
   "unet_models": [
     {
-      "url": "https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q8_0.gguf"
-    },
-    {
       "url": "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
     }
   ],
@@ -51,13 +48,7 @@
     }
   ],
   "controlnet_models": [
-    {
-      "url": "https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors",
-      "filename": "UnionProFlux.safetensors"
-    },
-    {
-      "url": "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux_shakker_labs_union_pro-fp8_e4m3fn.safetensors"
-    }
+
   ],
   "workflows": []
 }
