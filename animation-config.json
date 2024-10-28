@@ -1,1 +1,50 @@
-
+{
+  "default_workflow": "https://raw.githubusercontent.com/gazoscalvertos/sd_playground/refs/heads/main/workflows/I2I_animation_flux_fromSDXL.json",
+  "apt_packages": [],
+  "pip_packages": [],
+  "nodes": [],
+  "checkpoint_models": [
+    {
+      "url": "https://civitai.com/api/download/models/357959?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+      "url": "https://civitai.com/api/download/models/686204?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    }
+  ],
+  "unet_models": [
+    {
+      "url": "https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q8_0.gguf"
+    }
+  ],
+  "vae_models": [
+    {
+      "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors"
+    }
+  ],
+  "lora_models": [
+    {
+      "url": "https://civitai.com/api/download/models/758632?type=Model&format=SafeTensor"
+    },
+    {
+      "url": "https://huggingface.co/alimama-creative/FLUX.1-Turbo-Alpha/resolve/main/diffusion_pytorch_model.safetensors"
+      "filename": "FLUX.1-Turbo-Alpha.safetensors"
+    }
+  ],
+  "clip_models": [
+    {
+      "url": "https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/resolve/main/t5-v1_1-xxl-encoder-Q8_0.gguf"
+    },
+    {
+      "url": "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors",
+      "filename": "clip_l.safetensors"
+    }
+  ],
+  "esrgan_models": [
+  ],
+  "controlnet_models": [
+    {
+    "url": "https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors"
+    }
+  ],
+  "workflows": []
+}
