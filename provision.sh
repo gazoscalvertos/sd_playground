@@ -51,7 +51,7 @@ download_models_from_config() {
     fi
 
     # Create folders if they don't exist
-    mkdir -p models clip lora vae unet
+    mkdir -p models clip lora vae unet controlnet
 
     # Download models from various sections
     download_model_type "esrgan_models" "${WORKSPACE}/storage/stable_diffusion/models/models" "$config_file" "$hf_token" "$civitai_token"
