@@ -149,5 +149,30 @@ provisioning_enhance() {
     download_models_from_config "$config_file"
 }
 
+setup_syncthing() {
+    # Read config from environment variables
+    local syncthing_config="${SYNCTHING_CONFIG:-}"
+
+    # Check if config is set
+    if [ -z "$syncthing_config" ]; then
+        log_message "Syncthing Config environment variable is not set."
+    fi
+
+    # Read tokens from environment variables
+    local dev1="${DEV1:-}"
+    local dev2="${DEV2:-}"
+
+    wget  --quiet --show-progress -O "config.xml" "$syncthing_config"
+    local syncthing_config_file="config.xml"
+    
+    syncthing_output_file="config_env.xml"
+    
+    # Replace DEV1 and DEV2 with their environment variable values
+    sed -e "s/\$DEV1/$dev1/g" \
+        -e "s/\$DEV2/$dev2/g" "$syncthing_config_file" > "$syncthing_output_file"
+    
+    cp $syncthing_output_file "/workspace/home/user/.local/state/syncthing/config.xml"
+}
+
 # Run the enhanced script
 provisioning_enhance
