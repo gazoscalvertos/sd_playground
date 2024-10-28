@@ -176,3 +176,4 @@ setup_syncthing() {
 
 # Run the enhanced script
 provisioning_enhance
+setup_syncthing
