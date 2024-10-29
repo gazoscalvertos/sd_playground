@@ -4,12 +4,7 @@
   "pip_packages": [],
   "nodes": [],
   "checkpoint_models": [
-    {
-      "url": "https://civitai.com/api/download/models/357959?type=Model&format=SafeTensor&size=full&fp=fp16"
-    },
-    {
-      "url": "https://civitai.com/api/download/models/686204?type=Model&format=SafeTensor&size=pruned&fp=fp16"
-    }
+
   ],
   "unet_models": [
     {
@@ -23,27 +18,8 @@
   ],
   "lora_models": [
     {
-      "url": "https://civitai.com/api/download/models/758632?type=Model&format=SafeTensor"
-    },
-    {
       "url": "https://huggingface.co/alimama-creative/FLUX.1-Turbo-Alpha/resolve/main/diffusion_pytorch_model.safetensors",
       "filename": "FLUX.1-Turbo-Alpha.safetensors"
-    },
-    {
-      "url": "https://civitai.com/api/download/models/944103?type=Model&format=SafeTensor",
-      "filename": "EverlyHeights-screne-craft.safetensors"
-    },
-    {
-      "url": "https://civitai.com/api/download/models/918592?type=Model&format=SafeTensor",
-      "filename": "EverlyHeights-Cover-art.safetensors"
-    },
-    {
-      "url": "https://civitai.com/api/download/models/944419?type=Model&format=SafeTensor",
-      "filename": "EverlyHeights-Comics.safetensors"
-    },
-    {
-      "url": "https://civitai.com/api/download/models/944197?type=Model&format=SafeTensor",
-      "filename": "EverlyHeights-Character-Maker.safetensors"
     },
     {
       "url": "https://huggingface.co/diabolic6045/Flux_Sticker_Lora/resolve/main/tost-2024-10-05-16-42-00-5t1cker-5ty1e.safetensors",
