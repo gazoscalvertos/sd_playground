@@ -1,0 +1,51 @@
+{
+  "default_workflow": "https://raw.githubusercontent.com/gazoscalvertos/sd_playground/refs/heads/main/workflows/I2I_animation_flux_fromSDXL.json",
+  "apt_packages": [],
+  "pip_packages": [],
+  "nodes": [],
+  "checkpoint_models": [
+    {
+      "url": "https://civitai.com/api/download/models/456538?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+      "filename": "JuggernautXLinpainting.safetensors"
+    },
+    {
+      "url": "https://civitai.com/api/download/models/144566?type=Model&format=SafeTensor&size=full&fp=fp16",
+      "filename": "Samaritan3dCartoonv4.safetensors"
+    },
+    {
+      "url": "https://civitai.com/api/download/models/782002?type=Model&format=SafeTensor&size=full&fp=fp16",
+      "filename": "JuggernautXL.safetensors"
+    },
+    {
+      "url": "https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+      "filename": "PonyV6.safetensors"
+    }    
+  ],
+  "unet_models": [
+  ],
+  "vae_models": [
+    {
+      "url": "https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
+    }
+  ],
+  "lora_models": [
+    {
+      "url": "https://civitai.com/api/download/models/90963?type=Model&format=SafeTensor&size=full&fp=fp16",
+      "filename": "CuteCartoonIllustration.safetensors"
+    },
+    {
+      "url": "https://civitai.com/api/download/models/244808?type=Model&format=SafeTensor",
+      "filename": "DisneyPrincessXL.safetensors"
+    }
+  ],
+  "clip_models": [
+  ],
+  "esrgan_models": [
+  ],
+  "controlnet_models": [
+    {
+    "url": "https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors"
+    }
+  ],
+  "workflows": []
+}
