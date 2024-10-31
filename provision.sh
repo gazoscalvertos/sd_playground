@@ -109,14 +109,10 @@ provisioning_download_model() {
     local auth_header=""
     if [[ "$domain" == *"huggingface.co"* ]]; then
         auth_header="Authorization: Bearer $hf_token"
-    elif [[ "$domain" == *"civitai.com"* ]]; then
-        auth_header="Authorization: Bearer $civitai_token"
-    fi
-
-    # Download the file with --quiet to suppress extra output while still showing the progress
-    log_message "Downloading $(basename "$filepath") from $url to $filepath..."
-    if [ -n "$auth_header" ]; then
         wget --header="$auth_header" --quiet --show-progress -O "$filepath" "$url"
+    elif [[ "$domain" == *"civitai.com"* ]]; then
+        # auth_header="Authorization: Bearer $civitai_token"
+        wget -O "$filepath" "${url}?token=$civitai_token"
     else
         wget --quiet --show-progress -O "$filepath" "$url"
     fi
