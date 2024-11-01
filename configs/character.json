@@ -20,7 +20,7 @@
     {
       "url": "https://huggingface.co/alimama-creative/FLUX.1-Turbo-Alpha/resolve/main/diffusion_pytorch_model.safetensors",
       "filename": "FLUX.1-Turbo-Alpha.safetensors"
-    }
+    },
     {
       "url": "https://huggingface.co/aleksa-codes/flux-ghibsky-illustration/resolve/main/lora.safetensors",
       "filename": "ghibsky-illustration.safetensors"
