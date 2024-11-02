@@ -1,5 +1,5 @@
 {
-  "default_workflow": "https://raw.githubusercontent.com/gazoscalvertos/sd_playground/refs/heads/main/workflows/I2I_animation_flux_fromSDXL.json",
+  "default_workflow": "https://huggingface.co/alimama-creative/FLUX.1-Turbo-Alpha/raw/main/workflows/t2I_flux_turbo.json",
   "apt_packages": [],
   "pip_packages": [],
   "nodes": [],
